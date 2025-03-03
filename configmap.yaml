@@ -1,0 +1,24 @@
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-content
+data:
+  watch.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Watch Page</title></head>
+    <body><h1>Welcome to the Watch Page!</h1></body>
+    </html>
+  wear.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Wear Page</title></head>
+    <body><h1>Welcome to the Wear Page!</h1></body>
+    </html>
+  html.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>HTML Page</title></head>
+    <body><h1>Welcome to the HTML Page!</h1></body>
+    </html>

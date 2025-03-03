@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  nginx.conf: |
+    http {
+        server {
+            listen 80;
+
+            location /watch {
+                alias /usr/share/nginx/html/watch.html;
+            }
+
+            location /wear {
+                alias /usr/share/nginx/html/wear.html;
+            }
+
+            location /html {
+                alias /usr/share/nginx/html/index.html;
+            }
+        }
+    }
