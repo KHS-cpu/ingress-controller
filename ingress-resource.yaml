@@ -4,28 +4,29 @@ kind: Ingress
 metadata:
   name: web-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    # nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: nginx
   rules:
   - host: www.khs-lab
     http:
       paths:
-      - path: /watch(/|$)(.*)
-        pathType: Prefix
+      - path: /watch
+        pathType: Exact
         backend:
           service:
             name: web-service
             port:
               number: 80
-      - path: /wear(/|$)(.*)
-        pathType: Prefix
+      - path: /wear
+        pathType: Exact
         backend:
           service:
             name: web-service
             port:
               number: 80
-      - path: /html(/|$)(.*)
-        pathType: Prefix
+      - path: /html
+        pathType: Exact
         backend:
           service:
             name: web-service
