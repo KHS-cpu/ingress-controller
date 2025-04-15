@@ -1,5 +1,5 @@
 # Ingress-controller
-## An Ingress Controller in Kubernetes is used to route external traffic to multiple services running inside the cluster. Instead of exposing each service with a separate LoadBalancer, the Ingress Controller acts as a reverse proxy, allowing you to define rules for routing traffic based on path or hostname. This reduces the need for multiple external IPs and helps you expose only the necessary services to the public while keeping others internal.
+An Ingress Controller in Kubernetes is used to route external traffic to multiple services running inside the cluster. Instead of exposing each service with a separate LoadBalancer, the Ingress Controller acts as a reverse proxy, allowing you to define rules for routing traffic based on path or hostname. This reduces the need for multiple external IPs and helps you expose only the necessary services to the public while keeping others internal.
 
 ## Install ingress controller with helm
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
