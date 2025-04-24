@@ -78,3 +78,8 @@ An Ingress Controller in Kubernetes is used to route external traffic to multipl
 - Add SSL for more secure.
 - Reintegrate with Terraform code for IaC and automation.
 - Integrate CI/CD for easier updates.
+
+## 🏗️ Future Improvements Diagram
+
+![Architecture](https://github.com/KHS-cpu/ingress-controller/blob/main/future-ingress-controller.png)
+
